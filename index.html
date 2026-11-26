@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام ادارة النتائج</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card p-4">
+            <h3 class="mb-4 text-center">ادارة النتائج</h3>
+            <div class="mb-3">
+                <label class="form-label">اسم الطالب</label>
+                <input type="text" id="studentname" class="form-control">
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label class="form-label">الاساليب الكميةونظم دعم القرار</label>
+                    <input type="number" id="grade1" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">تطبيقات فى برمجة الحاسب والانترنت</label>
+                    <input type="number" id="grade2" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">مبادئ المالية العامة</label>
+                    <input type="number" id="grade3" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">نسبة الحضور</label>
+                <input type="number" id="attendance" class="form-control">
+            </div>
+            <div class="d-flex gap-2 mb-3">
+                <button id="addbtn" class="btn btn-primary w-50">إضافة طالب</button>
+                <button id="mercybtn" class="btn btn-warning w-50">لجنة الرأفة</button>
+            </div>
+            <div id="errorbox" class="text-danger fw-bold mb-3"></div>
+            <div class="mb-3">
+                <h5>قائمة الطلاب المسجلين:</h5>
+                <div id="studentsbox"></div>
+            </div>
+            <div>
+                <h5>التقرير النهائي:</h5>
+                <div id="reportbox"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
